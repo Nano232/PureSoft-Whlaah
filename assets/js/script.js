@@ -43,3 +43,17 @@ var swiper = new Swiper(".mySecSwiper", {
     },
   },
 });
+// --------------------------------------
+function changeStyleOfList() {
+  let icon = document.getElementById("icon");
+  let list = document.querySelector(".navigation-box");
+  icon.onclick = function () {
+    if (list.style.left === "-100%") {
+      list.style.left = "0";
+    } else {
+      list.style.left = "-100%";
+    }
+  };
+}
+
+changeStyleOfList();
