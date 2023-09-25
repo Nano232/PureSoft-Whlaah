@@ -44,6 +44,29 @@ var swiper = new Swiper(".mySecSwiper", {
   },
 });
 // --------------------------------------
+var swiper = new Swiper(".myTherSwiper", {
+  slidesPerView: 1,
+  spaceBetween: 10,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 40,
+    },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 50,
+    },
+  },
+});
+// --------------------------------------
 function changeStyleOfList() {
   let icon = document.getElementById("icon");
   let list = document.querySelector(".navigation-box");
