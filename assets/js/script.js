@@ -5,6 +5,14 @@ var swiper = new Swiper(".mySwiper", {
     el: ".swiper-pagination",
     clickable: true,
   },
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
   breakpoints: {
     640: {
       slidesPerView: 2,
@@ -20,6 +28,22 @@ var swiper = new Swiper(".mySwiper", {
     },
   },
 });
+var swiper = new Swiper(".mySecSwiper", {
+  spaceBetween: 30,
+  centeredSlides: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
 // --------------------------------------
 var swiper = new Swiper(".mySecSwiper", {
   slidesPerView: 1,
@@ -28,13 +52,21 @@ var swiper = new Swiper(".mySecSwiper", {
     el: ".swiper-pagination",
     clickable: true,
   },
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
   breakpoints: {
     640: {
-      slidesPerView: 2,
+      slidesPerView: 1,
       spaceBetween: 20,
     },
     768: {
-      slidesPerView: 4,
+      slidesPerView: 1,
       spaceBetween: 40,
     },
     1024: {
@@ -50,6 +82,14 @@ var swiper = new Swiper(".myTherSwiper", {
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
   },
   breakpoints: {
     640: {
@@ -70,6 +110,7 @@ var swiper = new Swiper(".myTherSwiper", {
 function changeStyleOfList() {
   let icon = document.getElementById("icon");
   let list = document.querySelector(".navigation-box");
+  let li = document.querySelectorAll(".navigation-box li");
   icon.onclick = function () {
     if (list.style.left === "-100%") {
       list.style.left = "0";
