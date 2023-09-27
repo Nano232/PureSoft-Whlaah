@@ -56,6 +56,9 @@ a {
 .About {
   margin-top: 150px;
 }
+.box-shadow:hover{
+  box-shadow: 10px 10px 10px #eee;
+}
 .three {
   padding: 0;
   background-image: url("../img/map.png");
