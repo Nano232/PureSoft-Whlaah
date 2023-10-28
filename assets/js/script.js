@@ -53,7 +53,7 @@ var swiper = new Swiper(".mySecSwiper", {
     clickable: true,
   },
   autoplay: {
-    delay: 2000,
+    delay: 2500,
     disableOnInteraction: false,
   },
   navigation: {
