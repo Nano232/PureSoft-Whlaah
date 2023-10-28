@@ -6,7 +6,7 @@ var swiper = new Swiper(".mySwiper", {
     clickable: true,
   },
   autoplay: {
-    delay: 2500,
+    delay: 2800,
     disableOnInteraction: false,
   },
   navigation: {
@@ -32,7 +32,7 @@ var swiper = new Swiper(".mySecSwiper", {
   spaceBetween: 30,
   centeredSlides: true,
   autoplay: {
-    delay: 2500,
+    delay: 2300,
     disableOnInteraction: false,
   },
   pagination: {
@@ -53,7 +53,7 @@ var swiper = new Swiper(".mySecSwiper", {
     clickable: true,
   },
   autoplay: {
-    delay: 2500,
+    delay: 2000,
     disableOnInteraction: false,
   },
   navigation: {
@@ -88,7 +88,7 @@ var swiper = new Swiper(".myTherSwiper", {
     prevEl: ".swiper-button-prev",
   },
   autoplay: {
-    delay: 2500,
+    delay: 3000,
     disableOnInteraction: false,
   },
   breakpoints: {
